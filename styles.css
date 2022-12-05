@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Mirza&family=Nunito:wght@500;700&display=swap');
+
+:root{
+    --primary-color: #6F3799;
+    --secondary-color: #AB5EE6;
+    --auxiliar-color: #2e84e6;
+    --another-color: #0c4e99;
+}
+h3{
+    color: #6f3799;
+    font-family: 'Nunito';
+    font-weight: bold;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+h6{
+    background-color: lightgray;
+    color: #AB5EE6;
+    border-radius: 5vh;
+    width: auto;
+    padding: 4%;
+    position: relative;
+    font-family: 'Nunito';
+}
+body{
+    display: flex;
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0'%3E%3Cstop offset='0' stop-color='%230C4E99'/%3E%3Cstop offset='1' stop-color='%232E84D6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%23E6D26A'/%3E%3Cstop offset='1' stop-color='%23AB5EE6'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(0 0)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='rotate(0 800 450)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(0 0)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(0 0)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='rotate(0 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='rotate(0 1400 132)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;    
+}
+.header{
+    width: 60vh;
+    height: 10vh;
+    background-color: white;
+    position: absolute;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto;
+    margin-top: 15vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    color: black;
+    border-radius: 20vh;   
+}
+.nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 2vh;
+    color: black;
+}
+li{
+    display: inline-block;
+    padding: 0% 2vh;
+}
+.main{
+    width:100vh;
+    background-color: white;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20vh;
+    margin-bottom: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5vh;
+    min-height:50vh;
+}
+.info{
+    border-radius: 5vh;
+    background-color: #F8F8F8;
+    min-height: 50vh;
+}
+.avatar{
+    width: 12vh;
+    background-color: #E6D26A;
+}
+.social-networks a{
+    display: inline-block;
+    padding: 0% 2vh;
+    text-decoration: none;
+}
+.contact{
+    text-justify: auto;
+}
+p{
+    text-justify:distribute;
+    font-size: .8rem;
+    line-height: 1.5rem;
+    position: relative;
+    font-family: 'Nunito';
+    left: 10%;
+}
+.contenido{
+    text-justify:distribute;
+    font-size: small;
+    position: relative;
+    font-family: 'Nunito';
+    left: 10%;
+    font-size: 15px;
+    width: 58vh;
+}
+.but{
+    background-color: white;
+    border: none;
+}
+.projectsImg{
+    width: 30vh;
+    min-height: 17vh;
+    max-height: 17vh;
+}
+span{
+    color: #0C4E99;
+}
+.imgparent{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.real{
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.over{
+    position: absolute;
+}
+.real:hover{
+    opacity: 0;
+}
+.proyects{
+    position:absolute;
+    right: 10%;
+    min-height: auto;
+    max-height: 100%;
+}
+.about{
+        position:absolute;
+        visibility: hidden;
+        right: 10%;
+        min-height: auto;
+        max-height: 100%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .about::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
+      }
+      .about::-webkit-scrollbar-track {
+        background: lightgray;        /* color of the tracking area */
+      }
+     .about::-webkit-scrollbar-thumb {
+        background-color: var(--primary-color);    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid var(--secondary-color);  /* creates padding around scroll thumb */
+      }
+h1{
+   color: var(--primary-color);
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   font-family: 'Nunito';
+}
+.sound{
+display:block;
+}
+.sound button img{
+    width: 5vh;
+    height: 5vh;
+    opacity: .8;
+}
+
+.contact div div p{
+    word-wrap: break-word;
+}
+
+audio{
+    display:none;
+}
+#cv{
+    visibility: hidden;
+}
+.downloadBtn{
+    background: none;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 2vh;
+    border: none;
+}
+
+.downloadBtn:active{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.soundBtn{
+    background: none;
+    border: none;
+}
+.soundBtn:active{
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+}
